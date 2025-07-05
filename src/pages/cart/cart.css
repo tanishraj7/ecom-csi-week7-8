@@ -1,0 +1,126 @@
+.cart {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.cat-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.c-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  gap: 1rem;
+}
+
+.c-item:hover {
+  transform: scale(1.02);
+}
+
+.c-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.c-item div {
+  flex: 1;
+}
+
+.c-item h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+
+.c-item p {
+  margin: 0.4rem 0 0;
+  color: #777;
+  font-weight: bold;
+}
+
+.c-item button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.c-item button:hover {
+  background-color: #e60023;
+}
+.c-item input[type="text"] {
+  width: 50px;
+  padding: 0.4rem;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.c-item input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.footer button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.footer button:hover {
+  background-color: #218838;
+}
+
+.footer h2{
+  color: grey;
+}
+
+.empty-mssg{
+  text-align: center;
+}
+
+
+
